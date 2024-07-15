@@ -1,0 +1,55 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    /* Ajusta el tamaño máximo de la imagen al ancho del grid-item */
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+    display: block;
+    /* Elimina el espacio adicional debajo de la imagen */
+}
+
+.btn-custom {
+    font-size: 10px;
+    /* Tamaño del texto deseado */
+    /* Otros estilos opcionales */
+}
+
+
+.selected {
+    border: 2px solid rgb(223, 223, 231);
+    /* Por ejemplo, cambia el borde cuando está seleccionado */
+    background-color: lightblue;
+    /* Cambia el color de fondo cuando está seleccionado */
+}
+
+.navbar-brand {
+    display: inline-block;
+    width: 300px;
+    /* Ancho de la imagen */
+    height: 90px;
+    /* Alto de la imagen */
+    background-image: url('../../img/imgs/Logo50anios.png');
+    /* Ruta a tu imagen */
+    background-size: contain;
+    /* Ajusta la imagen dentro del contenedor */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center;
+    /* Centra la imagen dentro del contenedor */
+    margin: 0;
+    /* Elimina cualquier margen por defecto */
+    padding: 0;
+    /* Elimina cualquier relleno por defecto */
+}

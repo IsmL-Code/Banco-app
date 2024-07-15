@@ -1,0 +1,56 @@
+<footer style="text-align: center; margin-top: 9px; background-color: rgb(226, 222, 222);">
+    <a class="navbar-brand" href="#"></a>
+</footer>
+
+<div class="card-header">
+    <h5 class="card-title">ACCESO BANCARIO ELECTRONICO</h5>
+</div>
+<div class="card-body">
+    <p><strong>{{userLogin?.first_name}} {{userLogin?.last_name}}</strong></p>
+    <div class=" mb-3">
+        <p>Por favor responda la siguiente pregunta y seleccione la imagen:</p>
+
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <label for="respuesta"><b>Pregunta de seguridad:</b> {{userLogin?.question}}:</label>
+            <div class="form-group row">
+                <label for="respuesta" class="col-sm-2 col-form-label">Respuesta:</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="respuesta" placeholder="Ingrese su respuesta"
+                        [(ngModel)]="identification" name="identification">
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-success btn-block btn-custom"
+                        style="width: 95px; height: 38px; " (click)="generateRandomImages()">Cambiar
+                        Pregunta</button>
+
+                </div>
+            </div>
+            <label>Por favor seleccione la imagen que asocie al proceso de registro/actualización de información y
+                presione el botón <b>Aceptar</b>.</label>
+        </div>
+    </div>
+    
+    <br>
+    <div
+        style="width: 500px; background-color: white; border-radius: 12px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin: 0 auto; padding: 20px;">
+        <div style="width: 100%;">
+            <div nz-row [nzGutter]="[16,16]" style="width: 100%;">
+                <div (click)="selectImage(image)" nz-col nzSpan="6"
+                    style="height: 100px; display:flex; place-content: center; place-items: center;"
+                    *ngFor="let image of listImages" [class.selected]="selectedImage === image">
+                    <img [src]="image?.route"
+                        style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div style="display: flex; justify-content: center; width: 95px; height: 38px;">
+        <button type="button" class="btn btn-secondary" (click)="confirm()">Ingresar</button>
+    </div>
+
+</div>

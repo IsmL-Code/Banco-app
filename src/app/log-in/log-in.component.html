@@ -1,0 +1,49 @@
+<footer style="text-align: center; margin-top: 20px;">
+    <a class="navbar-brand" href="#"></a>
+</footer>
+
+<div class="container mt-4 bg-write">
+    <div class="row justify-content-left">
+        <div class="col-md-6">
+            <div class="card bg-write border-0">
+                <div class="card-body">
+                    <h3>Banca Electrónica</h3>
+                    <h5 class="card-title">BIENVENIDOS</h5>
+                    <p class="card-text">
+                        Bienvenidos a la banca electrónica del Banco de Loja, que trabaja continuamente para garantizar la seguridad de nuestros clientes. Hemos implementado un sistema de seguridad. Si usted no tiene acceso a este canal, solicite información.
+                    </p>
+                    <a class="seguridad" href="#"></a> 
+                </div>
+            </div>
+        </div>
+        <div class="card bg-write border-0">
+          <div class="card-body">
+              <form>
+                  <div class="form-group">
+                      <label for="username">Usuario:</label>
+                      <input type="text" class="form-control"  [(ngModel)]="user" name="user">
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Contraseña:</label>
+                      <input type="password" class="form-control"  [(ngModel)]="password" name="password">
+                  </div>
+                  <div class="text-right mb-2 custom-no-background">
+                      <button type="button" class="btn btn-success" (click)=" login()">Ingresar<a class="btuni" href="#"></a></button>
+                  </div>
+                  <div class="card-footer text-center mb-2">
+                      <button class="btn btn-link text-dark">Olvido su contraseña?</button>
+                  </div>
+                  <div class="card-footer text-center mb-2">
+                      <button class="btn btn-link text-dark">Olvido su Usuario?</button>
+                  </div>
+                  <div class="card-footer text-center custom-bg-orange mb-2">
+                      <button class="btn btn-link text-dark">Activar Banca Electrónica</button>
+                  </div>
+
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+

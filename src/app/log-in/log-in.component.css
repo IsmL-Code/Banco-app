@@ -1,0 +1,70 @@
+.custom-bg-orange {
+    background-color: #FFA500;
+}
+
+.custom-no-background {
+    background-color: transparent !important;
+    border: none;
+}
+
+.btuni {
+
+    display: inline-block;
+    width: 20px;
+    /* Ancho de la imagen */
+    height: 20px;
+    /* Alto de la imagen */
+    background-image: url('../../img/imgs/IcoInteres.png');
+    /* Ruta a tu imagen */
+    background-size: contain;
+    /* Ajusta la imagen dentro del contenedor */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center;
+    /* Centra la imagen dentro del contenedor */
+    margin: 0;
+    /* Elimina cualquier margen por defecto */
+    padding: 0;
+    /* Elimina cualquier relleno por defecto */
+    background-color: #101010;
+}
+
+.navbar-brand {
+    display: inline-block;
+    width: 300px;
+    /* Ancho de la imagen */
+    height: 80px;
+    /* Alto de la imagen */
+    background-image: url('../../img/imgs/Logo50anios.png');
+    /* Ruta a tu imagen */
+    background-size: contain;
+    /* Ajusta la imagen dentro del contenedor */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center;
+    /* Centra la imagen dentro del contenedor */
+    margin: 0;
+    /* Elimina cualquier margen por defecto */
+    padding: 0;
+    /* Elimina cualquier relleno por defecto */
+}
+
+.seguridad {
+    display: inline-block;
+    width: 400px;
+    /* Ancho de la imagen */
+    height: 100px;
+    /* Alto de la imagen */
+    background-image: url('../../img/imgs/seguridad.JPG');
+    /* Ruta a tu imagen */
+    background-size: contain;
+    /* Ajusta la imagen dentro del contenedor */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center;
+    /* Centra la imagen dentro del contenedor */
+    margin: 0;
+    /* Elimina cualquier margen por defecto */
+    padding: 0;
+    /* Elimina cualquier relleno por defecto */
+}

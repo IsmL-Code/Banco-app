@@ -1,0 +1,231 @@
+body {
+  background-image: url('../../img/imgs/ad0a5446_predio.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  margin: 0;
+
+}
+
+
+
+.navbar-brand {
+  display: inline-block;
+  width: 300px;
+  /* Ancho de la imagen */
+  height: 80px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/Logo50anios.png');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+}
+
+.bt1 {
+
+
+  display: inline-block;
+  width: 30px;
+  /* Ancho de la imagen */
+  height: 18px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/cp.JPG');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+
+}
+
+
+.bt2 {
+
+  display: inline-block;
+  width: 30px;
+  /* Ancho de la imagen */
+  height: 18px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/ce.JPG');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+
+}
+
+.bt3 {
+
+  display: inline-block;
+  width: 30px;
+  /* Ancho de la imagen */
+  height: 18px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/cmf.JPG');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+
+}
+
+.bt4 {
+
+  display: inline-block;
+  width: 30px;
+  /* Ancho de la imagen */
+  height: 18px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/cnose.JPG');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+.card {
+  width: 300px;
+  border: 1px solid #cccccc5b;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: auto;
+  /* Mueve el card hacia la derecha */
+  margin-right: 0;
+  top: 200px;
+  right: 50px;
+  box-shadow: 0 4px 8px hsla(0, 4%, 89%, 0);
+  background-color: rgba(125, 115, 115, 0.837);
+  /* Color blanco con 80% de opacidad */
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.btcar1 {
+
+  display: inline-block;
+  width: 40px;
+  /* Ancho de la imagen */
+  height: 20px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/IcoBancaElectronica.png');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+
+}
+
+.btcar2 {
+
+  display: inline-block;
+  width: 40px;
+  /* Ancho de la imagen */
+  height: 20px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/IcoBancaPersonas.png');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+
+}
+
+.btcar3 {
+
+  display: inline-block;
+  width: 40px;
+  /* Ancho de la imagen */
+  height: 20px;
+  /* Alto de la imagen */
+  background-image: url('../../img/imgs/IcoBancaEmpresas.png');
+  /* Ruta a tu imagen */
+  background-size: contain;
+  /* Ajusta la imagen dentro del contenedor */
+  background-repeat: no-repeat;
+  /* Evita la repetición de la imagen */
+  background-position: center;
+  /* Centra la imagen dentro del contenedor */
+  margin: 0;
+  /* Elimina cualquier margen por defecto */
+  padding: 0;
+  /* Elimina cualquier relleno por defecto */
+
+}

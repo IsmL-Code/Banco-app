@@ -1,0 +1,11 @@
+.navbar-brand {
+    display: inline-block;
+    width: 300px; /* Ancho de la imagen */
+    height: 90px; /* Alto de la imagen */
+    background-image: url('../../img/imgs/Logo50anios.png'); /* Ruta a tu imagen */
+    background-size: contain; /* Ajusta la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    margin: 0; /* Elimina cualquier margen por defecto */
+    padding: 0; /* Elimina cualquier relleno por defecto */
+}

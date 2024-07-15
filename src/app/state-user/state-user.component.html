@@ -1,0 +1,74 @@
+<footer style="text-align: center; margin-top: 9px; background-color: rgb(226, 222, 222);">
+    <a class="navbar-brand" href="#"></a>
+
+</footer>
+
+
+
+
+
+
+<div class="container mt-5">
+    <button type="button" class="mover btn btn-warning" style="width: 95px; height: 38px;"
+                        (click)="salir()">Salir</button>
+    <div class="row">
+        <!-- Columna para las cartas verticales -->
+        <div class="col-2">
+            <div class="card-vid" style="width: 100px; padding: 90px;"> </div>
+        </div>
+        <!-- Columna para las cartas horizontales -->
+        <div class="col-30">
+
+            <div class="card" style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+                <div style="display: flex; align-items: center;">
+                    <h3 style="margin-bottom: 20px;">Banca <br> ELECTRONICA</h3>
+                    <div class="card-header">
+                        <div class="card-title">{{userLogin?.first_name}} {{userLogin?.last_name}}
+                            <b>{{userLogin?.identification}}</b></div>
+                        <div class="card-date">
+            
+                            <br>
+                            <b> Fecha/hora de último acceso:</b> {{dateIngress}}
+                        </div>
+                    </div>
+                    
+                </div>
+                <h4 class="letritas" style="color: red; margin-bottom: 15px;">Posición Consolidada</h4>
+            </div>
+
+            <div>
+
+                <div class="card"
+                    style="padding: 20px; background-color: white; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+                    <table style="width: 100%; max-width: 800px; margin: auto;">
+                        <thead style="background-color: rgb(0, 52, 0); color: #1b0101;">
+                            <tr>
+                                <th>Tipo Cliente</th>
+                                <th>Cuenta Activa</th>
+                                <th>Nro. Cuenta</th>
+                                <th>Saldo contable</th>
+                                <th>Saldo disponible</th>
+                                <th>Estado</th>
+                                <th>Retenciones</th>
+                                <th>Autorizaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{userLogin?.customertype}}</td>
+                                <td>{{userLogin?.accounttype}}</td>
+                                <td>{{userLogin?.accountnumber}}</td>
+                                <td>{{userLogin?.salC}}</td>
+                                <td>{{userLogin?.salD}}</td>
+                                <td>{{userLogin?.Status}}</td>
+                                <td>{{userLogin?.salR}}</td>
+                                <td>{{userLogin?.salA}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
