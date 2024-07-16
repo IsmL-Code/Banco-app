@@ -13,7 +13,7 @@
     </div>
     <div class="card">
         <div class="card-body">
-            <label for="respuesta"><b>Pregunta de seguridad:</b> {{userLogin?.question}}:</label>
+            <label for="respuesta"><b>Pregunta de seguridad:</b> {{preguntas[0].descripcion}}:</label>
             <div class="form-group row">
                 <label for="respuesta" class="col-sm-2 col-form-label">Respuesta:</label>
                 <div class="col-sm-4">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-sm-3">
                     <button type="submit" class="btn btn-success btn-block btn-custom"
-                        style="width: 95px; height: 38px; " (click)="generateRandomImages()">Cambiar
+                        style="width: 95px; height: 38px; " (click)="generateRandomImages(); generateRandomQuestion()">Cambiar
                         Pregunta</button>
 
                 </div>

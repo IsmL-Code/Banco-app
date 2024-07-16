@@ -15,4 +15,6 @@ export class User {
     Status?:string
     salR?:string
     salA?:string
+    question1?: string
+    question2?: string
 }

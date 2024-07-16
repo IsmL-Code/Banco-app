@@ -5,6 +5,8 @@ import { User } from '../models/user';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { UserService } from '../services/user.sevices';
+import { Question } from '../models/questions';
 
 
 @Component({
@@ -20,8 +22,9 @@ export default class ControUserComponent {
   listImages: any[] = [];
   listQuestion: any[] = [];
   selectedImage: any
+  preguntas: Question[]=[]
 
-  constructor(private router: Router, private ntService: NzNotificationService) {
+  constructor(private router: Router, private ntService: NzNotificationService, private auth: UserService) {
     const storedUser = localStorage.getItem('user');
     if (storedUser) {
       const verificationUser = localStorage.getItem('verification');
@@ -30,6 +33,7 @@ export default class ControUserComponent {
       } else {
         this.userLogin = JSON.parse(storedUser) as User;
         this.listImages.sort(() => Math.random() - 0.5);
+        this.generateRandomQuestion()
         this.generateRandomImages()
       }
     } else {
@@ -38,6 +42,10 @@ export default class ControUserComponent {
   }
 
   
+  generateRandomQuestion() {
+    this.preguntas = this.auth.preguntas.sort(() => Math.random() - 0.5);
+    this.preguntas.sort(() => Math.random() - 0.5);
+  }
   generateRandomImages() {
     this.listImages = [
       {
@@ -129,7 +137,12 @@ export default class ControUserComponent {
 
   confirm() {
     if (this.selectedImage != null && this.identification != null && this.identification != '') {
-      if (this.verificateIdentification()) {
+      console.log(this.preguntas[0])
+      console.log(this.identification)
+      console.log(this.userLogin)
+      if ((this.preguntas[0].llave == 1 && this.userLogin?.question1 == this.identification) || 
+      (this.preguntas[0].llave == 2 && this.userLogin?.question2== this.identification) 
+      && this.selectedImage.value == this.userLogin.icon) {
         localStorage.setItem("verification", JSON.stringify(true));
         this.ntService.success('completado', '')
         this.router.navigate(["/state-user"])

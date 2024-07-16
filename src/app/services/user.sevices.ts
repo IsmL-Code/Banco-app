@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/user';
 import * as bcrypt from 'bcryptjs';
+import { Question } from '../models/questions';
 
 @Injectable({
   providedIn: 'root'
@@ -8,9 +9,11 @@ import * as bcrypt from 'bcryptjs';
 export class UserService {
 
   users: User[] = [];
+  preguntas: Question[] = [];
 
   constructor() {
     this.generateUser();
+    this.buildQuestions();
   }
 
   login(user: string, password: string): User | null {
@@ -25,7 +28,6 @@ export class UserService {
   generateUser() {
 
     this.users = [
-
       {
         identification: '0106453631',
         customertype: 'TITULAR',
@@ -42,7 +44,9 @@ export class UserService {
         question: '¿Cuál fue tu prime sueldo?',
         answer: '100',
         first_name: 'Diana',
-        last_name: 'Lopez'
+        last_name: 'Lopez',
+        question1: 'pollo',
+        question2: 'naranja'
 
       },
 
@@ -62,7 +66,9 @@ export class UserService {
         question: '¿Cuál es tu color favorito?',
         answer: 'azul',
         first_name: 'Carolina',
-        last_name: 'Calle'
+        last_name: 'Calle',
+        question1: 'pollo',
+        question2: 'manzana'
 
       },
       {
@@ -81,7 +87,9 @@ export class UserService {
         question: '¿Cuál es su animal favorito?',
         answer: 'iguana',
         first_name: 'Ismael',
-        last_name: 'Condo'
+        last_name: 'Condo',
+        question1: 'pollo',
+        question2: 'uva'
 
       }, {
 
@@ -100,9 +108,21 @@ export class UserService {
         answer: 'maria',
         question: '¿Cuál como se llama tu mama?',
         first_name: 'jefferson',
-        last_name: 'Cepeda'
+        last_name: 'Cepeda',
+        question1: 'pollo',
+        question2: 'mora'
 
       }];
+  }
+
+  buildQuestions(){
+    this.preguntas = [{
+      llave:1,
+      descripcion:'¿Que animal es su favorito?'
+    }, {
+      llave:2,
+      descripcion:'¿Cual es fruta preferida?'
+    }]
   }
 
 
