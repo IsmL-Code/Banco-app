@@ -26,10 +26,11 @@ export default class ControUserComponent {
 
   constructor(private router: Router, private ntService: NzNotificationService, private auth: UserService) {
     const storedUser = localStorage.getItem('user');
+    console.log(storedUser)
     if (storedUser) {
       const verificationUser = localStorage.getItem('verification');
       if (verificationUser) {
-        this.router.navigate(["plataform"])
+        this.router.navigate(["state-user"])
       } else {
         this.userLogin = JSON.parse(storedUser) as User;
         this.listImages.sort(() => Math.random() - 0.5);
@@ -37,7 +38,7 @@ export default class ControUserComponent {
         this.generateRandomImages()
       }
     } else {
-      this.router.navigate(["login"])
+      this.router.navigate(["log-in"])
     }
   }
 
@@ -141,7 +142,9 @@ export default class ControUserComponent {
       console.log(this.identification)
       console.log(this.userLogin)
       if ((this.preguntas[0].llave == 1 && this.userLogin?.question1 == this.identification) || 
-      (this.preguntas[0].llave == 2 && this.userLogin?.question2== this.identification) 
+      (this.preguntas[0].llave == 2 && this.userLogin?.question2== this.identification) || 
+      (this.preguntas[0].llave == 3 && this.userLogin?.question3== this.identification) || 
+      (this.preguntas[0].llave == 4 && this.userLogin?.question4== this.identification) 
       && this.selectedImage.value == this.userLogin.icon) {
         localStorage.setItem("verification", JSON.stringify(true));
         this.ntService.success('completado', '')

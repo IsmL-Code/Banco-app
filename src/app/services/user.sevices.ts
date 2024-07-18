@@ -28,70 +28,7 @@ export class UserService {
   generateUser() {
 
     this.users = [
-      {
-        identification: '0106453631',
-        customertype: 'TITULAR',
-        accounttype: 'CUENTA ACTIVA',
-        accountnumber: '20010453654',
-        salC: '$40,73',
-        salD: '$80,73',
-        Status: 'ACTIVA',
-        salR: '$0,00',
-        salA: '$1,00',
-        user: 'user',
-        password: bcrypt.hashSync('pass1234', 10),
-        icon: 'metro',
-        question: '¿Cuál fue tu prime sueldo?',
-        answer: '100',
-        first_name: 'Diana',
-        last_name: 'Lopez',
-        question1: 'pollo',
-        question2: 'naranja'
-
-      },
-
-      {
-        identification: '0109453634',
-        customertype: 'TITULAR',
-        accounttype: ' CUENTA INACTIVA',
-        accountnumber: '33010453654',
-        salC: '$60,73',
-        salD: '$100,73',
-        Status: 'INACTIVA',
-        salR: '$30,00',
-        salA: '$15,00',
-        user: 'userad',
-        password: bcrypt.hashSync('pass12', 10),
-        icon: 'impresora',
-        question: '¿Cuál es tu color favorito?',
-        answer: 'azul',
-        first_name: 'Carolina',
-        last_name: 'Calle',
-        question1: 'pollo',
-        question2: 'manzana'
-
-      },
-      {
-        identification: '0107453631',
-        customertype: 'TITULAR',
-        accounttype: ' CUENTA ACTIVA',
-        accountnumber: '90010453654',
-        salC: '$10,73',
-        salD: '$200,73',
-        Status: 'ACTIVA',
-        salR: '$0,00',
-        salA: '$1,00',
-        user: 'jeff',
-        password: bcrypt.hashSync('pass123', 10),
-        icon: 'calculadora',
-        question: '¿Cuál es su animal favorito?',
-        answer: 'iguana',
-        first_name: 'Ismael',
-        last_name: 'Condo',
-        question1: 'pollo',
-        question2: 'uva'
-
-      }, {
+       {
 
         identification: '0107463532',
         customertype: 'TITULAR',
@@ -103,14 +40,56 @@ export class UserService {
         salR: '$60,00',
         salA: '$41,00',
         user: 'divco',
-        password: bcrypt.hashSync('upcat33', 10),
-        icon: 'corazon',
-        answer: 'maria',
-        question: '¿Cuál como se llama tu mama?',
+        password: bcrypt.hashSync('divco123', 10),
+        icon: 'televisor',
         first_name: 'jefferson',
         last_name: 'Cepeda',
         question1: 'pollo',
-        question2: 'mora'
+        question2: 'mora' ,
+        question3: 'Pedro',
+        question4: 'julio'
+
+      }, {
+
+        identification: '0208463532',
+        customertype: 'TITULAR',
+        accounttype: ' CUENTA ACTIVA',
+        accountnumber: '112880453654',
+        salC: '$300,73',
+        salD: '$70,73',
+        Status: 'ACTIVA',
+        salR: '$60,00',
+        salA: '$461,00',
+        user: 'isml',
+        password: bcrypt.hashSync('isml123', 10),
+        icon: 'corazon',
+        first_name: 'Ismael',
+        last_name: 'Condo',
+        question1: 'inguana',
+        question2: 'manzana' ,
+        question3: 'Esteban',
+        question4: 'febrero'
+
+      }, {
+
+        identification: '0208463532',
+        customertype: 'TITULAR',
+        accounttype: ' CUENTA ACTIVA',
+        accountnumber: '122880453654',
+        salC: '$10,73',
+        salD: '$700,73',
+        Status: 'ACTIVA',
+        salR: '$600,00',
+        salA: '$460,00',
+        user: 'glory',
+        password: bcrypt.hashSync('glory123', 10),
+        icon: 'telefono',
+        first_name: 'Kasandra',
+        last_name: 'Condo',
+        question1: 'gato',
+        question2: 'pera' ,
+        question3: 'Esteban',
+        question4: 'junio'
 
       }];
   }
@@ -118,10 +97,17 @@ export class UserService {
   buildQuestions(){
     this.preguntas = [{
       llave:1,
-      descripcion:'¿Que animal es su favorito?'
+      descripcion:'¿Cuales su  animal  favorito?'
     }, {
       llave:2,
       descripcion:'¿Cual es fruta preferida?'
+    }, {
+      llave:3,
+      descripcion:'¿Como se llama  tu papá?'
+    },
+    {
+      llave:4,
+      descripcion:'¿En que mes es tu cumpleanios?'
     }]
   }
 

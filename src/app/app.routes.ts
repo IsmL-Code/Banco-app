@@ -8,7 +8,7 @@ export const routes: Routes = [
 
     {path: 'welcome',component:WelcomeComponent},
     {path: 'log-in',component:LogInComponent },
-    {path: 'contro-user',component:ControUserComponent  },
+    {path: 'contro-user',component:ControUserComponent },
     {path: 'state-user',component: StateUserComponent },
 
     {path: '',redirectTo :'/welcome',pathMatch:'full'},

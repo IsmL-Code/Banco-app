@@ -22,10 +22,10 @@ export    default class StateUserComponent {
       if (verificationUser) {
         this.userLogin = JSON.parse(storedUser) as User
       } else {
-        this.router.navigate(["login"])
+        this.router.navigate(["control-user"])
       }
     } else {
-      this.router.navigate(["login"])
+      this.router.navigate(["log-in"])
     }
   }
 

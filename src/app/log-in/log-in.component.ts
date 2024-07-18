@@ -19,11 +19,20 @@ export default class LogInComponent {
   passwordVisible = false;
 
   constructor(private ntService: NzNotificationService, private userService: UserService, private router: Router) {
-
-    if (localStorage.getItem('user')) {
-      this.ntService.info('Sesion iniciada', '')
-      this.router.navigate(["/contro-user"])
+    console.log('log')
+    const userlog= localStorage.getItem('user') 
+    if (userlog) {
+      const verification = localStorage.getItem('verification')
+      if (verification) {
+        this.ntService.info('Sesion iniciada', '')
+        this.router.navigate(["state-user"])
+      }else{
+        this.router.navigate(["control'user"])
+      }
+    }else{
+      this.router.navigate(["log-in"])
     }
+
   }
 
   login() {
